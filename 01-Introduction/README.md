@@ -81,8 +81,8 @@ Pour créer un petit site eCommerce avec HTML et CSS, vous pouvez suivre les ét
 ```
 
 Le resultat suivant sera affiché dans le navigateur:
-![0-resultat navigateur sans css](https://raw.githubusercontent.com/raucheacho/Cours-HTML/main/18-Fichiers/0-resultat.png)
+![0-resultat navigateur sans css](https://raw.githubusercontent.com/raucheacho/Cours-HTML/main/19-fichiers/0-resultat.png)
 
 Le code HTML pour le site ecommerce avec les produits peut être amélioré en ajoutant du CSS pour donner un aspect plus esthétique et professionnel à la page voir l'image suivante.
 
-![1-resultat navigateur avec css](https://raw.githubusercontent.com/raucheacho/Cours-HTML/main/18-Fichiers/1-resultat.png)
+![1-resultat navigateur avec css](https://raw.githubusercontent.com/raucheacho/Cours-HTML/main/19-fichiers/1-resultat.png)

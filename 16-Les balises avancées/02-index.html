@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="le contenu de votre description" />
+    <meta name="author" content="rauche acho" />
+    <meta name="keywords" content="développement, programmation, web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Balise avancées</title>
+  </head>
+  <body>
+    <!--les éléments map et areas -->
+    <!--<area
+        shape="forme"
+        coords="x,y,L,H"
+        alt="description"
+        href="lien"
+      />-->
+    <!-- <img
+      src="./images/image.jpg"
+      alt="ordi pour jouer"
+      width="400"
+      height="379"
+      usemap="#map"
+    />
+    <map name="map">
+      <area shape="rect" coords="34,44,270,350" alt="Rectangle" href="#" />
+      <area shape="circle" coords="0,0,50" alt="cercle" href="#" />
+    </map> -->
+    <!--Utilisation du site https://imagemap.org/  -->
+    <img src="./images/image.jpg" usemap="#image_map" />
+    <map name="image_map">
+      <area
+        alt="clavier"
+        title="clavier"
+        href="./maps/clavier.html"
+        coords="170,567 530,463 637,512 670,497 697,508 342,657 "
+        shape="polygon"
+      />
+      <area
+        alt="écran"
+        title="écran"
+        href="./maps/ecran.html"
+        coords="179,66 521,117 515,340 191,378 "
+        shape="polygon"
+      />
+    </map>
+  </body>
+</html>
