@@ -22,5 +22,66 @@
       <input type="text" />
       <input type="submit" />
     </form>
+
+    <form>
+      <label for="navigateur1">Choisir un navigateur:</label>
+      <select id="navigateur1">
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Safari">Safari</option>
+        <option value="Edge">Edge</option>
+        <option value="Opera">Opera</option>
+      </select>
+    </form>
+    <form>
+      <label for="navigateur1">Choisir un navigateur:</label>
+      <select id="navigateur1">
+        <optgroup label="Fruits">
+          <option value="apple">Pomme</option>
+          <option value="banana">Banane</option>
+          <option value="orange">Orange</option>
+        </optgroup>
+        <optgroup label="Légumes">
+          <option value="carrot">Carotte</option>
+          <option value="lettuce">Laitue</option>
+          <option value="spinach">Épinard</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <form>
+      <label for="navigateur">Choisir un navigateur:</label>
+      <input type="text" id="navigateur" list="listNavigateur" />
+      <datalist id="listNavigateur">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Safari"></option>
+        <option value="Edge"></option>
+        <option value="Opera"></option>
+      </datalist>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Infos perso:</legend>
+        <label for="name">Nom:</label>
+        <input type="text" id="nom" name="nom" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <br />
+        <label for="phone">Téléphone:</label>
+        <input type="tel" id="phone" name="phone" />
+      </fieldset>
+    </form>
+    <form oninput="resultat.value = parseInt(a.value) * parseInt(b.value)">
+      <label for="a">Nombre 1 :</label>
+      <input type="number" id="a" name="a" value="0" />
+      <br />
+      <label for="b">Nombre 2 :</label>
+      <input type="number" id="b" name="b" value="0" />
+      <br />
+      <output name="resultat" for="a b"></output>
+    </form>
   </body>
 </html>

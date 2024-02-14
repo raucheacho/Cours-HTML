@@ -4,35 +4,87 @@
     <title>videos et iframes</title>
   </head>
   <body>
-    <video src="video.mp4"></video>
+    <video src="./videos/video.mp4"></video>
 
-    <video src="video.mp4">
+    <video src="./videos/video.mp4">
       text à ajouter si le navigateur ne supporte pas la video
     </video>
 
-    <video src="video.mp4" controls></video>
+    <video src="./videos/video.mp4" controls></video>
 
-    <video src="video.mp4" controls width="500"></video>
-
-    <video src="video.mp4" controls width="500" poster="imagethumb.jpg"></video>
-
-    <video src="video.mp4" controls width="500" poster="imagethumb.jpg"></video>
-    <audio controls src="./audios/song.mp3">
-      
-    </audio>
+    <video src="./videos/video.mp4" controls width="500"></video>
 
     <video
-      src="video.mp4"
+      src="./videos/video.mp4"
+      controls
+      width="500"
+      poster="imagethumb.jpg"
+    ></video>
+
+    <video
+      src="./videos/video.mp4"
+      controls
+      width="500"
+      poster="imagethumb.jpg"
+    ></video>
+    <audio controls src="./audios/song.mp3"></audio>
+
+    <video
+      src="./videos/video.mp4"
       loop
       controls
       width="500"
       poster="imagethumb.jpg"
     ></video>
-    <!--iframe d'une vidéo youtube-->
+    <video controls>
+      <source src="movie.mp4" type="video/mp4" />
+      Votre navigateur web ne prend pas en charge le format de fichier vidéo.
+      <track
+        label="Sous-titres en anglais"
+        kind="subtitles"
+        srclang="en"
+        src="subtitles_en.vtt"
+      />
+    </video>
 
+    <!--video externe grace à embed -->
+    <embed src="./videos/video.mp4" type="video/mp4" height="500" />
+
+    <!--video externe grace à object, il est recommandé par rapport à embed -->
+    <object data="./audio/song.mp3" type="audio/mpeg">
+      <param name="loop" value="true" />
+      <p>
+        Votre navigateur web ne prend pas en charge le format de fichier audio.
+        Veuillez télécharger le fichier audio
+        <a href="./audios/song.mp3">ici</a>.
+      </p>
+    </object>
+    <object data="./video/video.mp4" type="video/mp4">
+      <p>
+        Votre navigateur web ne prend pas en charge le format de fichier video.
+        Veuillez télécharger le fichier video
+        <a href="./videos/video.mp4">ici</a>.
+      </p>
+    </object>
+
+    <!--iframe d'une vidéo youtube-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YE-yxeWz0Hw?si=d2zd-Mcj4frf3_kY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
     <!--iframe depuis un site-->
-    <iframe src="raucheacho.com" frameborder="0" width="1280" height="720">
-      www.raucheacho.com
+    <iframe
+      src="https://info.cern.ch/"
+      frameborder="0"
+      width="1280"
+      height="720"
+    >
+      le premier site web
     </iframe>
   </body>
 </html>

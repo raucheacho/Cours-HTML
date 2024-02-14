@@ -8,8 +8,96 @@
   <body>
     <!-- utilisation de l'attrbut dir et des attributs en générale -->
     <p dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- la balise em -->
+    <p>Lorem ipsum <em>dolor</em> sit amet.</p>
+    <p>
+      Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit.
+      Quasi
+    </p>
+
     <!-- utilisation de la balise Abbréviation <abbr> -->
     <p>écrit par <abbr title="Dorgeles Koffi">D. Koffi</abbr></p>
     <abbr title="Madame">Mme</abbr>
+
+    <!-- utilisation de citations -->
+    <blockquote cite="http://www.victor-hugo.com/x.html">
+      <p>"L'art de la maîtrise vient avec la pratique du codage."</p>
+    </blockquote>
+    <blockquote cite="https://info.cern.ch/">
+      <p>"L'art de la maîtrise vient avec la pratique du codage."</p>
+      <cite>
+        <a href="https://info.cern.ch/">source le développeur</a>
+      </cite>
+    </blockquote>
+    <p>
+      Dans la page du rapport trimestriel <cite>Augmenter vos ventes</cite>, on
+      nous dit que
+      <q cite="https://info.cern.ch/"
+        >Pour être efficace regroupez vos compétences</q
+      >.
+    </p>
+    <p>Mon livre préféré est <cite>Les misérables</cite> de Vitor Hugo</p>
+
+    <!--ajouter du code -->
+    <code class="language-javascript"> function() {console.log()} </code>
+    <p>
+      Voici donc un exemple de code en JS
+      <samp> function() {console.log()}</samp>
+    </p>
+
+    <!-- adresse -->
+    <address>102 ibis 12 rue 13</address>
+
+    <!-- détails -->
+    <details>
+      <summary>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </summary>
+      <p>Copyright 1999-2011.</p>
+      <p>Ces images sont sous copyright (...)</p>
+    </details>
+
+    <!--les balise del, s et ins-->
+    <p>
+      J'avais initialement prévu d'<del>aller à la plage</del>
+      <ins>rester à la maison et lire</ins> aujourd'hui.
+    </p>
+    <p>Le prix de vente était initialement de <s>50 $</s> <ins>40 $</ins>.</p>
+
+    <!--la balise dfn-->
+    <p>
+      Le <dfn>SEO</dfn> est un ensemble de techniques pour référencer un site
+      Web
+    </p>
+    <!--la balise kbd-->
+    <p>Pour copier un fichier, appuyez sur <kbd>Ctrl + C</kbd>.</p>
+    <!--la balise mark-->
+    <p>Je <mark>met l'accent sur</mark> ce mot car il est important.</p>
+    <p>
+      L'utilisation du processeur est actuellement de
+      <meter value="45" min="0" max="100">45%</meter>.
+    </p>
+    <pre>
+      Le texte dans une balise "pre" est affiché avec une largeur fixe.
+      Les sauts de lignes et les espaces sont respectés.
+      Attention à ne pas mettre l'attribut "white-space:normal" dans la CSS, sinon, les sauts de lignes ne seront pas actifs.
+     </pre
+    >
+    <progress value="90" max="100"></progress>
+    <p>
+      La réunion est prévue pour
+      <time datetime="2023-03-13T14:00:00">15h00 le 13 mars 2023</time>.
+    </p>
+
+    <p>
+      Ceci est un exemple de texte avec un <wbr /> retour à la ligne forcé.
+      <wbr />Le texte suivant sera sur une nouvelle ligne.
+    </p>
+
+    <p>
+      Ceci est un exemple de texte avec un <br />
+      retour à la ligne forcé.<br />Le texte suivant sera sur une nouvelle
+      ligne.
+    </p>
   </body>
 </html>
